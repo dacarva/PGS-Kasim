@@ -1,0 +1,27 @@
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.nniicc-dropzoneParent{
+    margin-top: 0 !important;
+    margin-left: 10px;
+}
+.dropzone2{
+    padding-top: 10px;
+}
