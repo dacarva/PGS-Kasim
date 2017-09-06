@@ -17,6 +17,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/dropzone.js"></script>
+    <script type="text/javascript" src="js/video_player.js"></script>
   </head>
 
   <body>
@@ -98,10 +99,18 @@
     <!-- projectSolution -->
     <div class="sectionthree">
       <div class="container text-center">
-        <a href="#myModal" onclick="goFullscreen('video2');" id="playstop" data-target=".bs-example-modal-lg" data-toggle="modal">
+        <!-- <a href="#myModal" onclick="goFullscreen('video2');" id="playstop" data-target=".bs-example-modal-lg" data-toggle="modal">
           <div class="plybtn blink"><i class="fa fa-play"></i></div>
         </a>
-        <h4 class="montserratSbold pt15">PROJECT SOLUTIONS</h4>
+        <h4 class="montserratSbold pt15">PROJECT SOLUTIONS</h4> -->
+        <div class="videoPlayer">
+          <div class="wrapper">
+            <video class="video">
+                         <source src="video/Project_v3.mp4"  poster="images/banner.png" type="video/mp4" />
+                      </video>
+            <div class="playpause"></div>
+          </div>
+        </div>
         <div class="blackline"></div>
       </div>
       <!-- container -->
@@ -324,7 +333,7 @@
               </div>
               <div class="form-group inputDnD">
                 <label class="sr-only" for="inputFile">File Upload</label>
-                <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Adjunte sus archivos">
+                <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Adjuntar archivos">
               </div>
               <p><button class="btn  submitBtn btnStyle">ENVIAR</button></p>
             </form>
